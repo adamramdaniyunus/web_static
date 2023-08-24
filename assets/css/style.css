@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+* {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F0EEED;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Header */
+
+.header {
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    display: flex;
+    backdrop-filter: blur(72px);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+.logo a {
+    font-weight: 600;
+}
+
+.logo a span {
+    color: rgb(145, 141, 141);
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    font-weight: 600;
+}
+
+/* Home Content */
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.img img {
+    width: 450px;
+    object-fit: cover;
+    height: 340px;
+}
+
+.img img:hover {
+    transform: scale(.9);
+}
+
+.tagline {
+    width: 400px;
+    margin: auto;
+}
+
+.tagme {
+    text-shadow: 1px 1px 1px #fff;
+    font-size: 1.2rem;
+}
+
+p {
+    color: rgb(145, 141, 141);
+}
+
+
+/* Skill content */
+.skill {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+
+
+.list-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skills {
+    padding: 20px;
+    background-color: #d8d8d8;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    width: 300px;
+}
+
+/* Project Content */
+
+.project {
+    margin-top: 100px;
+}
+
+.project-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-project {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #ededed;
+    z-index: 100;
+    justify-content: center;
+    padding: 10px;
+}
+
+.project-img img {
+    width: 100%;
+}
+
+/* Achievments Content */
+.achievments {
+    margin: 100px;
+}
+
+.achievments-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.achievment-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 200px;
+    color: #fff;
+}
+
+.contact {
+    padding: 50px 20px;
+    background-color: #000;
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    gap: 10px;
+}
+
+.contact a {
+    color: #fff;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+@media screen and (max-width: 950px) {
+
+    .header {
+        z-index: 9999;
+        position: fixed;
+        bottom: 0;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: start;
+    }
+
+    .home {
+        margin-top: 0;
+    }
+
+    .home-container {
+        gap: 10px;
+    }
+
+
+    .menu a {
+        font-weight: 600;
+        color: rgb(145, 141, 141);
+    }
+
+}
+
+#skill,
+#project,
+#achievment {
+    height: 50px;
+}
